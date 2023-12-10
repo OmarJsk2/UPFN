@@ -1,0 +1,135 @@
+{% extends "core/home.html" %}
+{% load static %}
+
+{% block title %} About Us {% endblock %}
+
+
+{% block content %}
+
+
+  <div class='about_upfn'>
+    <h1> PROFILE OF UMMAH PEACE FOUNDATION (UPFN) </h1>
+
+    <div class='abt-upfn'>
+      <P>
+        Name of Organisation: UMMAH PEACE FOUNDATION - UPFN
+  
+  Vision: We envision a world where people of all faiths and culture can come together in peace and harmony, respecting each other's differences and working towards a common goal of creating a better world for all.
+  
+  Mission: Our mission is to promote interfaith harmony and understanding through education, dialogue and community building. We aim to create a safe space where people of all faiths can come together to learn from each other, build relationships and work towards a common goal of promoting peace and social justice.
+  
+  History: UPFN was founded in 2021 through an acquired  passion to promote interfaith dialogue and understanding, especially from grassroot level championed by Hajiya Rakiya Munkailu Ahmed the pioneer financial secretary of Interfaith Dialogue Forum for Peace - IDFP, Nigeria ( A brain child of the International Dialogue Center (KAICIID formerly situated at Vienna-Austria but now moved to Lisbon-Portugal).Over the years the organisation has grown to include members from Christians and Muslims though will welcome adherents of other religions.
+  
+  Structure: UPFN has Board of Trustees, Board of Directors, stake holders, office staff and volunteers whose profiles and pictures appears on our website.
+  
+  Programs and Services:UPFN offers a range of programs and services that are designed to promote interfaith harmony and understanding. These include:
+  
+  Interfaith dialogue and workshops.
+  
+  Community events.
+  
+  Educational programs.
+  
+  Advocacy and outreach etc
+  
+      </P>
+    </div>
+    
+  <div class='about_upfn'>
+    <h1> 2023 INTERNATIONAL PEACE DAY: </h1>
+
+    <div class='abt-upfn'>
+      <P>
+        2023 INTERNATIONAL PEACE DAY:
+
+        UMMAH PEACE FOUNDATION - UPFN, GOODWILL MESSAGE
+        
+        Every 21st September is celebrated as  International Peace Day. This year's 2023 celebration is themed “Actions for Peace: Our Ambition for the #Global Goals”. As such it affords us the opportunity to examine the role peace plays 
+        and acknowledge its profound impact on the lives of special citizens, particularly both traditional, political and religious aspect..
+         This day,serves as a reminder of the importance of peace in fostering social harmony, inclusive development, and equality for all.
+        
+        Peace is not merely the absence of conflict; it is a state of being where every individual, regardless of their abilities, can flourish and contribute meaningfully to society. 
+        UMMAH PEACE FOUNDATION is celebrating 2023 PEACE DAY with it's Action packed  activities on violence prevention to schools. Ummah Peace Foundation is geared to make significant strides in promoting peace and unity among human beings irrespective of tribe, religion or cultural affiliations.By doing so, we pave the way for a future that embraces diversity and empowers every citizen to reach their full potential.
+        
+        When PEACE prevails, it opens doors of opportunity for people. It breaks down the barriers that often hinder their access to education, healthcare, employment, and public services. It allows them to participate fully in all aspects of life and become active contributors to our state's or nations progress.
+        
+        UMMAH PEACE FOUNDATION joins all peace champions across the globe to celebrate International Peace Day, let us renew our commitment to creating a peaceful and inclusive society,as people created by Allah/Yahweh/God Almighty.By embracing diversity, fostering understanding, and promoting equality, we lay the foundation for a society where every citizen, regardless of their religion , faith and abilities, can thrive.
+        
+        Ummah Peace Foundation has continued to champion and support initiatives that promote peace, inclusivity, and empowerment for the citizens, irrespective mode of worship, tribe or culture.
+        
+        Hajiya Rakiya Munkailu Ahmed - Executive Director, UPFN
+  
+  Advocacy and outreach etc
+  
+      </P>
+
+
+    </div>
+    <div class="vid_upfn">
+      <h1>Together we move </h1>
+      <video width="320" height="240" controls>
+        <source src="/media/item_images/upfn.mp4" type="video/mp4">
+        </video>
+    </div>
+ 
+  </div>
+
+
+
+
+
+  <h1 class="our_members">Our members</h1>
+{% for member in members %}
+<section class="section">
+  
+
+  <div class="about-center section-center">
+    <article class="about-img">
+      <img src="{{ member.image.url }}">
+    </article>
+    
+    <article class="about">
+      <!-- btn container -->
+      <div class="btn-container">
+        <button class="tab-btn active" data-id="history">history</button>
+        <button class="tab-btn" data-id="vision">vision</button>
+        <button class="tab-btn" data-id="goals">goals</button>
+      </div>
+      <article class="about-content">
+
+
+        <!-- single item -->
+        <div class="content active" id="history">
+          <h4>{{member.name}}</h4>
+          <p>
+            {{member.description}}
+          </p>
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="content" id="vision">
+          <h4>vision</h4>
+          <p>
+           
+        Vision: We envision a world where people of all faiths and culture can come together in peace and harmony, respecting each other's differences and working towards a common goal of creating a better world for all.
+
+          </p>
+          
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="content" id="goals">
+          <h4>goals</h4>
+          <p>
+            History: UPFN was founded in 2021 through an acquired  passion to promote interfaith dialogue and understanding, especially from grassroot level championed by Hajiya Rakiya Munkailu Ahmed the pioneer financial secretary of Interfaith Dialogue Forum for Peace - IDFP, Nigeria ( A brain child of the International Dialogue Center (KAICIID formerly situated at Vienna-Austria but now moved to Lisbon-Portugal).Over the years the organisation has grown to include members from Christians and Muslims though will welcome adherents of other religions.
+          </p>
+        </div>
+        <!-- end of single item -->
+      </article>
+    </article> 
+  
+  </div>
+</section>
+{% endfor %}
+
+{% endblock %}

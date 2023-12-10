@@ -1,0 +1,64 @@
+{% extends "core/home.html" %}
+{% load static %}
+
+{% block title %} About Us {% endblock %}
+
+
+{% block content %}
+
+{% for member in members %}
+<section class="section">
+
+    <div class="about-center section-center">
+      <article class="about-img">
+          <img src="{{ member.image.url }}">
+      </article>
+<article class="about">
+
+    <!-- btn container -->
+      <div class="btn-container">
+        <button class="tab-btn active" data-id="history">history</button>
+        <button class="tab-btn" data-id="vision">vision</button>
+        <button class="tab-btn" data-id="goals">goals</button>
+      </div>
+
+  <article class="about-content">
+        <!-- single item -->
+        <div class="content active" id="history">
+          <h4 id="author">{{member.name}}</h4>
+          <p id="info">{{member.description}}</p>
+          {% comment %} <h4> {{member.Age}} </h4> {% endcomment %}
+        </div>
+        <!-- end of single item -->
+        <!-- single item -->
+        <div class="content" id="vision">
+          <h4 id="author">{{member.name}}</h4>
+          <h4 id="goals">{{member.description}}</h4>
+          <p>
+          </p>
+        
+        </div>
+        <!-- end of single item --> 
+        <!-- single item -->
+        <div class="content" id="goals">
+          <h4> GOALS </h4>
+          <p>
+            Chambray authentic truffaut, kickstarter brunch taxidermy vape
+            heirloom four dollar toast raclette shoreditch church-key.
+            Poutine etsy tote bag, cred fingerstache leggings cornhole
+            everyday carry blog gastropub. Brunch biodiesel sartorial mlkshk
+            swag, mixtape hashtag marfa readymade direct trade man braid
+            cold-pressed roof party. Small batch adaptogen coloring book
+            heirloom. Letterpress food truck hammock literally hell of wolf
+            beard adaptogen everyday carry. Dreamcatcher pitchfork yuccie,
+            banh mi salvia venmo photo booth quinoa chicharrones.
+          </p>
+        </div>
+        <!-- end of single item -->
+    </article>
+  </article>
+  </div>
+</section>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "core/home.html" %}
+
+{% block title %} Contact {% endblock %}
+
+{% block content %}
+
+
+
+
+<section class="sub-header">
+<h1> Find us </h1>
+
+    </section>
+    
+    <!-- contactez nous-->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.3496810787396!2d-6.908326785633537!3d33.93213328063871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda713f124d69269%3A0xf1a74169ac7b7e2d!2sSchool%20Group%20Wissal%20Al%20Maarifa!5e0!3m2!1sen!2sma!4v1651401537958!5m2!1sen!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contactez-nous">
+        
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Head Office: 7 Trademore  Avenue,900107, Lugbe, Federal Capital Territory, Abuja - Nigeria. <br>
+                            Regional Office: Regional Office: 152 Royce Road, Owerri, Imo - State
+                        </h5>
+               
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>09123969350</h5>
+                       
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>ummahpeacefoundation@gmail.com</h5>
+                        {% comment %} <p>Av Moulay Ali Chrif, Témara</p> {% endcomment %}
+                    </span>
+                </div>
+                <div>
+                    {% comment %} <i class="fa fa-instagram"></i>
+                    <span>
+                        <h5>wissal_al_maarifa</h5>
+                  
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-facebook"></i>
+                    <span>
+                        <h5>Upfn@Facebook</h5>
+              
+                    </span> {% endcomment %}
+                </div>
+            </div class="contact">
+            <h6>Please introduce yourself briefly</h6>
+            <div class="contact-col">
+
+                <form method="post" action=".">
+                   {% csrf_token %}
+{% comment %}               
+                    <input type="text" name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your Email address" required>
+                    <input type="text" name="subject" placeholder="Suject" required>
+                    <textarea rows="10" placeholder="Message" name="Message"  required></textarea> {% endcomment %}
+                    {{ form.as_p}}
+                    <button class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

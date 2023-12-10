@@ -1,0 +1,307 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title> {% block title %} {% endblock %} - UPFN</title>
+    <script src="https://example.com/path/to/script.js"></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="icon" href="{% static "image/upfn.ico"%}" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/upfn.css" %}">
+    {% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> {% endcomment %}
+    <!-- swiper from cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+   {% comment %} <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  {% endcomment %}
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=FontName" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
+
+</head>
+<body>
+
+    {% comment %} <div class='page'>
+    </div> {% endcomment %}
+ <!-- nav header -->
+
+  <!-- header -->
+  <header id="home">   
+    <nav id="nav">
+      <div class='nav-center'>
+        <!-- nav header -->
+            <div class='nav-header'>
+        <img src="{% static 'image/upfn.png' %}" class="logo" alt="Logo"> 
+          <button class="nav-toggle">
+            {% comment %} <i class="fas fa-bars"> </i> {% endcomment %}
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+
+
+              <!--links-->
+           
+              <div class="links-container">
+                <ul class="links">
+                  <li>
+                    <a href="{% url "home" %}" class="scroll-link">Home</a>
+                  </li>
+                  <li>
+                    <a href="{% url "about" %}" class="scroll-link">Bot</a>
+                  </li>
+                  {% comment %} <li>
+                    <a href="{% url "index"%}" class="scroll-link">BoT</a>
+                
+                  </li> {% endcomment %}
+                  <li>
+                    <a href="{% url "contact" %}" class="scroll-link">Contact</a>
+                  </li>
+                </ul>
+              </div>
+    </div>
+  </nav>
+
+      <!-- hero -->
+
+ 
+    
+        <div class="hero">
+            <div class="image-wrapper">
+                <h1> (UPFN)<br>UMMA PEACE FOUNDATION </h1>
+                {% comment %} <a href="#tours" class="scroll-link btn btn-white"> Explore Tours </a> {% endcomment %}
+                
+            </div>
+        </div>
+
+
+   
+    
+    {% block content %}
+ 
+    {% comment %} <div class='container'>
+
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"> <img src="static/image/image1.jpg"></div>
+              <div class="swiper-slide"> <img src="static/image/image2.jpg"></div>
+              <div class="swiper-slide"> <img src="static/image/image3.jpg"></div>
+           
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+           
+            </div>
+            </div>
+    </div> {% endcomment %}
+        <!-- Slider main container -->
+
+         <!-- Begining of slider -->
+        <main>
+         <section class="container2">
+          <!-- title -->
+          <div class="title2">
+            <h2>Our Previews</h2>
+            <div class="underline"></div>
+          </div>
+
+          <!-- review -->
+
+          <article class="review">
+            <div class="img-container">
+              <img src="{% static "image/image1.jpg"%}" id="person-img" alt="" />
+
+            </div>
+            <h4 id="author">sara jones</h4>
+            <p id="job">ux designer</p>
+            <p id="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+              Iste, doloremque nihil?
+            </p>
+      
+            <!-- prev next buttons-->
+            <div class="button-container">
+              <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+            <!-- random button -->
+            <button class="random-btn">surprise me</button>
+            <div>
+              <a href="{% url "about" %}">See more </a>
+
+            </div>
+          </article>
+        </section>
+      </main>
+ 
+    <!-- End of slider -->
+
+
+
+
+   {% endblock %}
+
+
+
+
+       
+{% comment %} <div class="con">
+
+        <div class="abt">
+            <u>ABOUT</u>
+            <p>Vision: We envision a world where people of all faiths and culture can come together in peace and harmony, respecting each other's differences and working towards a common goal of creating a better world for all.</p>
+            <a href="{% url "about" %}"> <span> Learn more </span>
+        </div>
+        
+          <div class='info'>
+              <h1>Contact Us</h1>
+              <div>
+                <div class="contact-col">
+                  
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>W3JV+VG5,</h5>
+                        </span>
+                    </div>
+
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>05 37 60 99 11</h5>
+
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <span>
+                            <h5>upfn</h5>
+
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-instagram"></i>
+                        <span>
+                            <h5>UPFN</h5>
+
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-facebook"></i>
+                        <span>
+                            <h5>UPFN</h5>
+                        </span>
+                    </div>
+                </div>
+          </div>    
+
+</div>    {% endcomment %}
+
+
+<div class="con">
+
+
+  <div class="ab">
+
+    <span class="under" style="text-decoration: underline;">ABOUT</span>
+      <p> <b> Vision: </b> We envision a world where people of all faiths and culture can come together in peace and harmony, respecting each other's differences and working towards a common goal of creating a better world for all.</p>
+      <a href="/about"><span>Learn more</span></a> 
+  </div>
+
+  {% comment %} <div class="abt">
+       <span style="text-decoration: underline;">ABOUT</span>
+      <p>Vision: We envision a world where people of all faiths and culture can come together in peace and harmony, respecting each other's differences and working towards a common goal of creating a better world for all.</p>
+      <a href="/about"><span>Learn more</span></a> {% 
+  </div> {% endcomment %}
+
+  <div class='info'>
+    <a href= "/contact"> <h1>Contact Us</h1> </a>
+      <div class="contact-col">
+          <div>
+              <i class="fa fa-home"></i>
+              <span>
+                  <h5>Head Office: 7 Trademore  Avenue,900107, Lugbe, Federal Capital Territory, Abuja - Nigeria. 
+                      <br>
+                    Regional Office: Regional Office: 152 Royce Road, Owerri, Imo - State</h5>
+              </span>
+          </div>
+          <div>
+              <i class="fa fa-phone"></i>
+              <span>
+                  <h5>09123969350</h5>
+              </span>
+          </div>
+          <div>
+              <i class="fa fa-envelope"></i>
+              <span>
+                  <h5>ummahpeacefoundation@gmail.com</h5>
+              </span>
+          </div>
+          {% comment %} <div>
+              <i class="fa fa-instagram"></i>
+              <span>
+                  <h5>UPFN@instagram</h5>
+              </span>
+          </div>
+          <div>
+              <i class="fa fa-facebook"></i>
+              <span>
+                  <h5>Upfn@Facebook</h5>
+              </span>
+          </div> {% endcomment %}
+      </div>
+  </div>
+
+</div>
+
+
+
+
+
+  
+</header>
+      <!-- footer -->
+
+      <footer class="section"> 
+
+        <P>
+
+            Motto: Unity, Love and Progress <br>
+            Copyright &copy; <span id="date"> 2</span> UPFN. All rights Reserved.
+        </p>
+    </footer>
+
+     <!-- back to top menu -->
+     <a href='#home' class='scroll-link top-link'>Go Top</a>
+   <!-- swiper from cdn  -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="{% static 'js/upfn.js' %}"></script> 
+   {% comment %} <script src="{% static 'tailwind.config.js' %}"></script> {% endcomment %}
+
+</body>
+</html>

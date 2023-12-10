@@ -1,0 +1,57 @@
+
+{% extends "core/home.html" %}
+{% load static %}
+
+{% block title %} BoT {% endblock %}
+
+
+{% block content %}
+
+<div class="mem">
+
+    <h1 class="mb-12 text-4xl text-center">Board Of Truetees</h2>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="members-container">
+    {% for member in members %}
+    <div class="member">
+            <div class="image">
+            <img src="{{ member.image.url }}">
+            <div class="details">
+                <h1 class="text-right">{{ member.name }}</h2>
+                </div>
+
+                
+            </div>
+
+          
+            <div class="details">
+                <p class="text-right">{{ member.description }}</p>
+            </div>
+    </div>
+
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
