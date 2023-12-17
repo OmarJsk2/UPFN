@@ -23,8 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY", "234324dkaejfdk")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = "RENDER" not in os.environ
+DEBUG = True
+# DEBUG = "RENDER" not in os.environ
 
 
 ALLOWED_HOSTS = [
@@ -38,7 +38,8 @@ ALLOWED_HOSTS = [
   "localhost",  "2367-105-72-33-85.ngrok-free.app",
   "localhost",  "91fa-105-72-33-85.ngrok-free.app",
   "localhost",  "01fb-105-68-241-91.ngrok-free.app",
-  "https://upfn-5m6u.onrender.com"
+  "https://upfn-5m6u.onrender.com",
+  "upfn.org"
 
   
 ]
