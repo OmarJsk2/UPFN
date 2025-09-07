@@ -29,8 +29,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-  "upfn.net"
-  "www.upfn.net"
+
+    "127.0.0.1",
+    "localhost",
+    "upfn.net",
+    "www.upfn.net",
+    "yourusername.pythonanywhere.com",
+
 
   
 ]
