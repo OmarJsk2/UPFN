@@ -28,17 +28,8 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = [
-#   "localhost",  "192.168.1.8"
-  "localhost",  "160.77.104.14",
-  "localhost",  "192.168.1.62",
-  "localhost",  "172.20.10.4",
-  "localhost",  "127.0.0.1",
-  "localhost",  "0.0.0.0",
-  "localhost",  "5340-105-72-33-85.ngrok-free.app",
-  "localhost",  "2367-105-72-33-85.ngrok-free.app",
-  "localhost",  "91fa-105-72-33-85.ngrok-free.app",
-  "localhost",  "01fb-105-68-241-91.ngrok-free.app",
-  "https://upfn-5m6u.onrenderh.com",
+
+  "upfn.net"
   "www.upfn.net"
 
   
