@@ -39,7 +39,7 @@ ALLOWED_HOSTS = [
   "localhost",  "91fa-105-72-33-85.ngrok-free.app",
   "localhost",  "01fb-105-68-241-91.ngrok-free.app",
   "https://upfn-5m6u.onrender.com",
-  "upfn.net"
+  "www.upfn.net"
 
   
 ]
