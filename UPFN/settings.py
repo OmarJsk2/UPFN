@@ -64,7 +64,7 @@ INSTALLED_APPS = [
     "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
     "core",
-    "corsheaders"
+    "corseheaders"
 ]
 
 MIDDLEWARE = [
