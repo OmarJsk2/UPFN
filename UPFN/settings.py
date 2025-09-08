@@ -34,7 +34,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "upfn.net",
     "www.upfn.net",
-    "yourusername.pythonanywhere.com",
+    "webapp-2747181.pythonanywhere.com",
     "www.upfn.net"
 
 
