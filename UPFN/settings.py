@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "upfn.net",
     "www.upfn.net",
+    "Omark2.pythonanywhere.com",
     "webapp-2747181.pythonanywhere.com",
 
 
