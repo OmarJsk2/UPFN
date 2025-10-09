@@ -166,7 +166,7 @@ nav {
   }
   .hero {
     min-height: 90vh;
-    background-image:linear-gradient(rgba(4, 9, 30, 0.089), rgba(4,9,30,0.7)), url("../image/image1.jpg");
+    background-image:linear-gradient(rgba(4, 9, 30, 0.089), rgba(4,9,30,0.7)), url("../image/Ramadan.jpeg");
     display: grid;
     place-items: center;
     /* height: 60vh; */
